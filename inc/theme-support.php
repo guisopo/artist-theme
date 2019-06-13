@@ -2,13 +2,11 @@
 /**
  * Artist theme support
  *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
  * @package Artist
  */
 
 function artist_setup () {
-  /*
+  /**
    * Switch to HTML5 semantic markup
    */
   add_theme_support( 'html5', array( 
@@ -19,20 +17,20 @@ function artist_setup () {
     'caption' 
   ) );
   
-  /*
+  /**
    * Let WordPress manage the document title
    */
   add_theme_support( 'title-tag' );
   
-  /*
-   * Enable support for Post Thumbnails on posts and pages.
+  /**
+   * Enable support for post thumbnails and featured images
    * https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
    */
   
   add_theme_support( 'post-thumbnails' );
   
-  /*
-   * Enable support for Post Formats.
+  /**
+   * Enable support for the following post formats
    * https://developer.wordpress.org/themes/functionality/post-formats/
    */
   
@@ -42,7 +40,7 @@ function artist_setup () {
     'video' 
   ) );
   
-  /*
+  /**
    *  Background color
    */
   add_theme_support( 'custom-background', array(
