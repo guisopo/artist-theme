@@ -3,6 +3,8 @@ const common = require("./webpack.common");
 const merge = require("webpack-merge");
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
+const myProxy = 'http://localhost:9999/';
+
 module.exports = merge(common, {
   mode: "development",
   output: {
@@ -21,7 +23,7 @@ module.exports = merge(common, {
     new BrowserSyncPlugin({
       files: '**/*.php',
       injectChanges: true,
-      proxy: 'http://localhost:9999/'
+      proxy:  myProxy
     })
   ]
   
