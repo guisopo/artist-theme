@@ -1,1 +1,25 @@
-@import 'base/_normalize.scss';
+@import
+  'abstracts/variables';
+
+@import
+  'base/normalize',
+  'base/base',
+  'base/typography';
+
+@import
+  'layout/navigation',
+  'layout/grid',
+  'layout/header',
+  'layout/footer';
+
+@import
+  'components/media';
+
+@import
+  'pages/about',
+  'pages/cv',
+  'pages/contact';
+
+@import
+  'themes/theme',
+  'themes/admin';
