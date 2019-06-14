@@ -1,4 +1,3 @@
-import './styles/example.scss';
-import './styles/exampleII.scss';
+import './styles/main.scss';
 
 console.log('hola');
