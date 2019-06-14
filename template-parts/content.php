@@ -1,4 +1,13 @@
-<a id="post-<?php the_ID(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+<?php
+/**
+ * Template part for displaying posts
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Artist
+ */
+?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<div>
 		<?php the_post_thumbnail( 'hamilton_preview-image' ); ?>
@@ -6,4 +15,4 @@
 	
 		<?php the_title( '<h2 class="title">', '</h2>' ); ?>
 
-</a>
+</article>
