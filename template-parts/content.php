@@ -9,10 +9,6 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-	<div>
-		<?php the_post_thumbnail( 'hamilton_preview-image' ); ?>
-	</div>
-	
 		<?php the_title( '<h2 class="title">', '</h2>' ); ?>
 
 </article>
