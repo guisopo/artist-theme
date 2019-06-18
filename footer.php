@@ -12,7 +12,7 @@
 
 		</div><!-- #content -->
 
-		<footer class="site-footer section-inner">
+		<footer>
 
 			<p>&copy; <?php echo date( 'Y' ); ?> <a href="<?php echo esc_url( home_url() ); ?>" class="site-name"><?php bloginfo( 'name' ); ?></a></p>
 
