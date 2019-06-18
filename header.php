@@ -22,4 +22,16 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+  <header class="site-header">
+    <h1 class="site-title"><a href="<?php echo esc_url( home_url() ); ?>" class="site-name" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+    <?php 
+      wp_nav_menu( array(
+        'menu_class'        => 'nav header-menu',
+        'fallback_cb'       => 'false',
+        'container'         => 'false',
+      ) );
+    ?>
+  </header>
+
   <div class="content">

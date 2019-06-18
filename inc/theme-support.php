@@ -46,6 +46,12 @@ function artist_setup () {
   add_theme_support( 'custom-background', array(
     'default-color' => 'ffffff',
   ) );
+  
+  /**
+   * Activate Menu
+   */
+  register_nav_menu('header-menu',__( 'Header Menu' ));
 }
 
 add_action( 'after_setup_theme', 'artist_setup' );
+
