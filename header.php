@@ -23,6 +23,12 @@
 
 <body <?php body_class(); ?>>
 
+  <?php 
+		if ( function_exists( 'wp_body_open' ) ) {
+			wp_body_open(); 
+		}
+	?>
+
   <header class="site-header">
     <h1 class="site-title"><a href="<?php echo esc_url( home_url() ); ?>" class="site-name" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
     <?php 
