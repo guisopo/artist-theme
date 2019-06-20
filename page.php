@@ -16,8 +16,15 @@ get_header();
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-		<?php the_title( '<h2 class="title">', '</h2>' ); ?>
-		<?php the_content() ?>
+		<?php the_title( '<h1 class="title">', '</h2>' ); ?>
+		<?php
+		while ( have_posts() ) :
+			the_post();
+
+			get_template_part( 'template-parts/content', 'page' );
+
+		endwhile;
+		?>
 
 
 </article>
